@@ -14,7 +14,7 @@ function SignUp() {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/api/users/signup",
+        "https://mernauthencationapi.vercel.app//api/users/signup",
         { name, email, password },
         {
           headers: { "Content-Type": "application/json" },
